@@ -16,24 +16,21 @@ engine:
   id: copilot
   model: claude-sonnet-4
 
-runtimes:
-  bun:
-    version: "1.1"
-
 network:
   firewall: true
   allowed:
     - defaults
     - github
+    - bun
 ---
 
 # Build and Test Hono
 
-You are a CI/CD agent. Your job is to build and test this Bun project.
+You are a CI/CD agent. Your job is to build and test this Bun-based project.
 
 ## Steps
 
-1. Install dependencies using bun:
+1. Install dependencies using Bun:
    ```
    bun install
    ```
